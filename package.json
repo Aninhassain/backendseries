@@ -1,0 +1,19 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "This is a backend end series",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aninhassain/backendseries.git"
+  },
+  "author": "Anin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aninhassain/backendseries/issues"
+  },
+  "homepage": "https://github.com/Aninhassain/backendseries#readme"
+}
