@@ -100,10 +100,20 @@
 
 
 // HTTP 
-const http = require('node:http');
-const server = http.createServer(function(req,res){
-    res.end("Hello World");
-});
-server.listen(3000);
-console.log("Server listening on port 3000");
+// const http = require('node:http');
+// const server = http.createServer(function(req,res){
+//     res.end("Hello World");
+// });
+// server.listen(3000);
+// console.log("Server listening on port 3000");
 // defintion of http : http stands for hypertext transfer protocol. It is a protocol used for communication between a client and a server. It is the foundation of data communication on the web. It defines how messages are formatted and transmitted, and how web servers and browsers should respond to various commands. When you enter a URL in your browser, it sends an HTTP request to the server, which then responds with the requested resource (such as a web page) or an error message if the resource cannot be found.
+
+
+// npm 
+//  node package manager is a package manager for nodejs that allows you to install and manage packages (libraries) that you can use in your nodejs applications. You can install packages using the command line and use them in your code by requiring them. It also allows you to manage dependencies, scripts, and versioning of your project. It is an essential tool for any nodejs developer.
+
+//  package vs module : a package is a collection of modules that are bundled together and can be installed using npm. A module is a single file or a collection of files that can be imported and used in your code. A package can contain multiple modules, and it can also have its own dependencies, scripts, and versioning. In summary, a package is a higher-level concept that encompasses one or more modules, while a module is a lower-level concept that represents a single unit of functionality.
+
+// scripts and custom scripts : scripts are commands that you can run using npm. They are defined in the package.json file under the "scripts" section. You can define custom scripts to automate tasks such as building your project, running tests, or starting a development server. For example, you can define a script called "start" that runs your server, and then you can run it using the command "npm start". Custom scripts can be used to simplify your workflow and make it easier to run common tasks with a single command.
+
+console.log("This is the end of the script");
