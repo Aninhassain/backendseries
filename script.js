@@ -72,7 +72,7 @@
 // }   );
 
 // console.log("This is the end of the script");
-const fs = require('node:fs');
+// const fs = require('node:fs');
 // fs.writeFile("test.txt","Hello World: My name is Anin Hassain ",function(err){
 //     if(err) console.error(err);
 //     else console.log("File written successfully");
@@ -97,3 +97,13 @@ const fs = require('node:fs');
 //     if(err) console.error(err);
 //     else console.log("File deleted successfully");
 // } );
+
+
+// HTTP 
+const http = require('node:http');
+const server = http.createServer(function(req,res){
+    res.end("Hello World");
+});
+server.listen(3000);
+console.log("Server listening on port 3000");
+// defintion of http : http stands for hypertext transfer protocol. It is a protocol used for communication between a client and a server. It is the foundation of data communication on the web. It defines how messages are formatted and transmitted, and how web servers and browsers should respond to various commands. When you enter a URL in your browser, it sends an HTTP request to the server, which then responds with the requested resource (such as a web page) or an error message if the resource cannot be found.
