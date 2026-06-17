@@ -141,8 +141,11 @@
 
 // middlewares: are funtions that are executed before the final request handler or before sending the response to the client from the server. The work of middlewares is to provide or execute some functionality before the final request for example, authentication, logging, etc.
 
-// const express = require('express');
-// const app = express();
+const express = require('express');
+const app = express();
+app.use(express.json()); // to parse json data from the request body
+app.use(express.urlencoded({extented:true})); // to parse urlencoded data from the request body
+
 // app.use(function(req,res,next){
 //     console.log("This is a middleware");
 //     next();
@@ -151,15 +154,15 @@
 //     console.log("This is another middleware");
 //     next();
 // })
-// app.get('/',function(req,res){
-//     res.send("This is slash route");
-// });
+app.get('/',function(req,res){
+    res.send("This is slash route");
+});
 // app.get('/profile',function(req,res){
 //     res.send("My name is Anin Hassain");
 //     console.log("This is profile route");
 // });
-// app.listen(3000);
-// console.log("Server listening on port 3000");
+app.listen(3000);
+console.log("Server listening on port 3000");
 
 
 // error handling middlewares: are middlewares that are used to handle errors in your application. They are defined with four parameters (err, req, res, next) and are used to catch and handle errors that occur in your application. For example, you can define an error handling middleware that catches any errors that occur in your routes and sends a response with the error message and status code. Error handling middlewares are essential for building robust and reliable applications, as they allow you to gracefully handle errors and provide meaningful feedback to the client.
