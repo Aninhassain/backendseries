@@ -116,4 +116,17 @@
 
 // scripts and custom scripts : scripts are commands that you can run using npm. They are defined in the package.json file under the "scripts" section. You can define custom scripts to automate tasks such as building your project, running tests, or starting a development server. For example, you can define a script called "start" that runs your server, and then you can run it using the command "npm start". Custom scripts can be used to simplify your workflow and make it easier to run common tasks with a single command.
 
-console.log("This is the end of the script");
+// Express.js: is a framework that handles all request and response of the server. It is built on top of the http module and provides a more convenient and powerful way to build web applications. It allows you to define routes, handle middleware, and manage the flow of your application in a more organized way. It also has a large ecosystem of plugins and extensions that can be used to add additional functionality to your application. Express.js is widely used for building web applications and APIs in Node.js.
+
+//Routes : are used to define the endpoints of your application. They specify how the server should respond to different HTTP requests (GET, POST, PUT, DELETE, etc.) at specific URLs. For example, you can define a route for the URL "/users" that responds to GET requests by returning a list of users, and responds to POST requests by creating a new user. Routes are an essential part of building web applications and APIs, as they allow you to define the structure and behavior of your application.
+
+// creating an route in express.js
+const express = require('express');
+const app = express();
+app.get('/', function(req, res){
+    res.send("This is slash route");
+});
+app.get('/profile',function(req,res){
+    res.send("My name is Anin Hassain");
+});
+app.listen(3000);
