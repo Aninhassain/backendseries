@@ -1,1 +1,16 @@
-This is a backend end series
+BACKEND
+--------------------------------------------------------
+--------------------------------------------------------
+JAVASCRIPT
+
+Arrays 
+        forEach()
+    	map
+        filter
+        find
+        indexOf
+
+OBJECTS in JS
+         
+
+
