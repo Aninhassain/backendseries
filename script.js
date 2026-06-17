@@ -121,12 +121,57 @@
 //Routes : are used to define the endpoints of your application. They specify how the server should respond to different HTTP requests (GET, POST, PUT, DELETE, etc.) at specific URLs. For example, you can define a route for the URL "/users" that responds to GET requests by returning a list of users, and responds to POST requests by creating a new user. Routes are an essential part of building web applications and APIs, as they allow you to define the structure and behavior of your application.
 
 // creating an route in express.js
-const express = require('express');
-const app = express();
-app.get('/', function(req, res){
-    res.send("This is slash route");
-});
-app.get('/profile',function(req,res){
-    res.send("My name is Anin Hassain");
-});
-app.listen(3000);
+// const express = require('express');
+// const app = express();
+// app.get('/', function(req, res){
+//     res.send("This is slash route");
+// });
+// app.get('/profile',function(req,res){
+//     res.send("My name is Anin Hassain");
+// });
+// app.listen(3000);
+
+// npm i express // to install express.js
+
+// nodemon: is a utility that automatically restarts your Node.js application when it detects changes in your source code. 
+
+// npm i nodemon -g  // to install nodemon globally
+// nodemon script.js // to run the script with nodemon
+// npx nodemon script.js // to run the script with nodemon without installing it globally
+
+// middlewares: are funtions that are executed before the final request handler or before sending the response to the client from the server. The work of middlewares is to provide or execute some functionality before the final request for example, authentication, logging, etc.
+
+// const express = require('express');
+// const app = express();
+// app.use(function(req,res,next){
+//     console.log("This is a middleware");
+//     next();
+// })
+// app.use(function(req,res,next){
+//     console.log("This is another middleware");
+//     next();
+// })
+// app.get('/',function(req,res){
+//     res.send("This is slash route");
+// });
+// app.get('/profile',function(req,res){
+//     res.send("My name is Anin Hassain");
+//     console.log("This is profile route");
+// });
+// app.listen(3000);
+// console.log("Server listening on port 3000");
+
+
+// error handling middlewares: are middlewares that are used to handle errors in your application. They are defined with four parameters (err, req, res, next) and are used to catch and handle errors that occur in your application. For example, you can define an error handling middleware that catches any errors that occur in your routes and sends a response with the error message and status code. Error handling middlewares are essential for building robust and reliable applications, as they allow you to gracefully handle errors and provide meaningful feedback to the client.
+//  const express = require('express');
+//  const app = express();     
+//     app.get('/',function(req,res){
+//         throw new Error("This is an error");
+//     });
+//     app.use(function(err,req,res,next){
+//         console.error(err.stack);
+//         res.status(500).send("Something went wrong");
+//     });
+//     app.listen(3000);
+//     console.log("Server listening on port 3000");
+
